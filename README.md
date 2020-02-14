@@ -48,7 +48,6 @@ While PySearch searches only functions across Python 3.7+, broader coverage is c
 
 ## Release Notes
 
-Users appreciate release notes as you update your extension.
 
 ### 0.2.3
 
