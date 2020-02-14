@@ -1,13 +1,13 @@
 # **PySearch**
 
-### A faster way to code
+## A faster way to code
 
 **PySearch** provides intelligent completion suggestions that improve on ordinary Google search, by incorporating the context surrounding each query and learning on the fly.
 
 Because we're in beta, the service is free for a limited number of users.
 
 
-### Getting Started:
+## Getting Started:
 
 1. Download [pyls](https://github.com/palantir/python-language-server):
   ```
@@ -21,7 +21,8 @@ Because we're in beta, the service is free for a limited number of users.
   Linux: `Ctrl-Shift-P -> Settings View: View Installed Packages -> PySearch Settings`
 
 
-### Using PySearch:
+## Using PySearch:
+
 To make a PySearch query, type the delimiter (`!!` *by default, but user-configurable*) to begin a search:
 
 ![alt text][cosine_distance_c3]
@@ -40,6 +41,19 @@ The `--context` flag takes integer values from `0` through `5`, where higher num
 
 
 While PySearch searches only functions across Python 3.7+, broader coverage is currently in alpha. Our search indexes are hosted in PySearch Cloud, and we're actively working on rolling out a local version. All requests are TLS/SSL encrypted, anonymized, and **never** sold or shared.
+
+
+## Known Issues
+
+
+## Release Notes
+
+Users appreciate release notes as you update your extension.
+
+### 0.2.3
+
+Initial release
+
 ___
 
 Made with ❤ by Flowbot Inc
