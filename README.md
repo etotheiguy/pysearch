@@ -11,7 +11,7 @@
 
   `View -> Toggle Command Palate -> Settings View: View Installed Packages -> PySearch Settings`
 
-<img src="https://raw.githubusercontent.com/flowbot-inc/pysearch/master/docs/images/add_env.png" alt="getstarted0">
+![alt text](https://raw.githubusercontent.com/flowbot-inc/pysearch/master/docs/images/add_env.png)
 
 1. Create or Open a Python file in a Project Folder:
 
@@ -19,7 +19,7 @@
 
   `[right-click] -> New File`
 
-<img src="https://raw.githubusercontent.com/flowbot-inc/pysearch/master/docs/images/add_new_file.png" alt="getstarted1">
+![alt text](https://raw.githubusercontent.com/flowbot-inc/pysearch/master/docs/images/add_new_file.png)
 
 2. Follow prompt to download [pyls](https://github.com/palantir/python-language-server)
 
@@ -29,7 +29,7 @@
 
   `View -> Toggle Command Palate -> Window: Reload`
 
-<img src="https://raw.githubusercontent.com/flowbot-inc/pysearch/master/docs/images/open_file.png" alt="getstarted2">
+![alt text](https://raw.githubusercontent.com/flowbot-inc/pysearch/master/docs/images/open_file.png)
 
 3. Install non-standard libraries in your python runtime to begin making PySearch queries
 
@@ -40,14 +40,14 @@
 
 To make a PySearch query, type the delimiter (`!!` *by default*) to begin a search:
 
-<img src="https://raw.githubusercontent.com/flowbot-inc/pysearch/master/docs/images/cosine_distance.png" alt="cd3">
+![alt text](https://raw.githubusercontent.com/flowbot-inc/pysearch/master/docs/images/cosine_distance.png)
 
 For more control over query results, try adding the `--context` flag (alias `-c`) anywhere in your query
 to scale context sensitivity.
 
 The `--context` flag takes integer values from `0` through `5`, where higher numbers increase context sensitivity.
 
-<img src="https://raw.githubusercontent.com/flowbot-inc/pysearch/master/docs/images/cosine_distance_c0.png" alt="cd0">
+![alt text](https://raw.githubusercontent.com/flowbot-inc/pysearch/master/docs/images/cosine_distance_c0.png)
 
 
 While PySearch searches only functions across Python 3.7+, broader coverage is currently in alpha. Our search indexes are hosted in PySearch Cloud, and we're actively working on rolling out a local version. All requests are TLS/SSL encrypted, anonymized, and **never** sold or shared.
