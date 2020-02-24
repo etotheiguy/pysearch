@@ -4,26 +4,48 @@
 
 **PySearch** provides intelligent completion suggestions that improve on ordinary Google search, by incorporating the context surrounding each query and learning on the fly.
 
-Because we're in beta, the service is free for a limited number of users.
-
 
 ## Getting Started:
 
-1. Download [pyls](https://github.com/palantir/python-language-server):
-  ```
-   pip install python-language-server
-  ```
+0. (Optional) Add your python runtime to the PySearch config.
 
-2. Add your python runtime to the PySearch config.
+  `View -> Toggle Command Palate -> Settings View: View Installed Packages -> PySearch Settings`
 
-  Mac:   `Cmd-Shift-P -> Settings View: View Installed Packages -> PySearch Settings`
+![alt text][add_env]
 
-  Linux: `Ctrl-Shift-P -> Settings View: View Installed Packages -> PySearch Settings`
+[add_env]: ./docs/images/add_env.png "Add new environment"
+
+1. <a name="step_1"></a> Create or Open a Python file in a Project Folder:
+
+  `File -> Add Project Folder`
+
+  `[right-click] -> New File`
+
+![alt text][add_new_file]
+
+[add_new_file]: ./docs/images/add_new_file.png "Add new Python file"
+
+2. Follow prompt to download [pyls](https://github.com/palantir/python-language-server)
+
+  Or..
+
+  Run `pip install python-language-server` in the command-line
+
+  `View -> Toggle Command Palate -> Window: Reload`
+
+![alt text][open_file]
+
+[open_file]: ./docs/images/open_file.png "Add new Python file"
+
+
+3. <a name="step_3"></a> Install non-standard libraries in your python runtime to begin making PySearch queries
+
+  e.g. `pip install sklearn`
 
 
 ## Using PySearch:
 
-To make a PySearch query, type the delimiter (`!!` *by default, but user-configurable*) to begin a search:
+To make a PySearch query, type the delimiter (`!!` *by default*) to begin a search:
 
 ![alt text][cosine_distance_c3]
 
@@ -42,6 +64,23 @@ The `--context` flag takes integer values from `0` through `5`, where higher num
 
 While PySearch searches only functions across Python 3.7+, broader coverage is currently in alpha. Our search indexes are hosted in PySearch Cloud, and we're actively working on rolling out a local version. All requests are TLS/SSL encrypted, anonymized, and **never** sold or shared.
 
+## Troubleshooting
+
+1. If PySearch queries aren't working, check the logs to confirm the server started successfully:
+
+  `View -> Developer -> Toggle Developer Tools`
+
+  Check the `Console` tab for `PySearch server is starting up`
+
+2. Atom uses events to trigger the server startup process, so try reloading the window
+
+  `View -> Toggle Command Palate -> Window: Reload`
+
+3. If the server startup isn't initiated upon reloading, you may not have opened your Python file in an active workspace (see "Getting Started" [step #1](#step_1))
+
+4. If your PySearch results aren't including non standard library packages, check that the package is installed in your python runtime in "Getting Started" [step #3](#step_3).
+
+5. For feedback or additional support, visit us [here](https://www.getflowbot.com).
 
 ## Known Issues
 
