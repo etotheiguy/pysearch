@@ -15,7 +15,7 @@
 
 [add_env]: ./docs/images/add_env.png "Add new environment"
 
-1. <a name="step_1"></a> Create or Open a Python file in a Project Folder:
+1. Create or Open a Python file in a Project Folder:
 
   `File -> Add Project Folder`
 
@@ -38,7 +38,7 @@
 [open_file]: ./docs/images/open_file.png "Add new Python file"
 
 
-3. <a name="step_3"></a> Install non-standard libraries in your python runtime to begin making PySearch queries
+3. Install non-standard libraries in your python runtime to begin making PySearch queries
 
   e.g. `pip install sklearn`
 
@@ -76,9 +76,9 @@ While PySearch searches only functions across Python 3.7+, broader coverage is c
 
   `View -> Toggle Command Palate -> Window: Reload`
 
-3. If the server startup isn't initiated upon reloading, you may not have opened your Python file in an active workspace (see "Getting Started" [step #1](#step_1))
+3. If the server startup isn't initiated upon reloading, you may not have opened your Python file in an active workspace (see "Getting Started" step #1)
 
-4. If your PySearch results aren't including non standard library packages, check that the package is installed in your python runtime in "Getting Started" [step #3](#step_3).
+4. If your PySearch results aren't including non standard library packages, check that the package is installed in your python runtime in "Getting Started" step #3.
 
 5. For feedback or additional support, visit us [here](https://www.getflowbot.com).
 
