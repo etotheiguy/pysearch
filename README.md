@@ -60,7 +60,7 @@ While PySearch searches only functions across Python 3.7+, broader coverage is c
 
   Check the `Console` tab for `PySearch server is starting up`
 
-2. Atom uses events to trigger the server startup process, so try reloading the window
+2. Atom uses events to trigger the server startup process, so try reloading the window if you aren't getting PySearch results (as the server may never have been triggered, or pyls may have died)
 
   `View -> Toggle Command Palate -> Window: Reload`
 
